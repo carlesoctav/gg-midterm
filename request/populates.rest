@@ -1,0 +1,17 @@
+
+
+POST http://localhost:3001/api/populates
+content-type: application/json
+
+{
+    "videoId":"5MvHSSp5VGE"
+}
+
+### GET videos
+GET http://localhost:3001/api/videos
+
+
+### 
+GET http://localhost:3001/api/products/64bef7ed350faafd69bc5ae1
+
+
