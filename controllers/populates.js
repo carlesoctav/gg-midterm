@@ -2,12 +2,13 @@ const mongoose = require("mongoose");
 const Product = require("../models/product");
 const Video = require("../models/video");
 const getVideoAndProduct = require("../utils/youtube-scrap");
+const { PopulateError } = require("../utils/customError");
 const populateRouter = require("express").Router();
 
 populateRouter.post("/", async (request, response) => {
   const videoId = request.body.videoId;
   if (!videoId) {
-    throw new Error("no video id provided");
+    throw new PopulateError("no video id provided");
   }
 
   const videoAndProduct = await getVideoAndProduct(videoId);
@@ -21,7 +22,7 @@ populateRouter.post("/", async (request, response) => {
   const savedIds = savedProducts.map((product) => product._id);
   videoDetails.productList = savedIds;
   const savedVideos = await Video.insertMany(videoDetails);
-  response.json(savedVideos);
+  response.status(201).json(videoAndProduct);
 });
 
 module.exports = populateRouter;

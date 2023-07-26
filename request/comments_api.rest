@@ -1,0 +1,16 @@
+
+GET http://localhost:3001/api/comments
+
+
+### 
+POST http://localhost:3001/api/comments
+Content-Type: application/json
+
+{
+    "comment": "Mondrop earphone best value di rangenya",
+    "userId": "64c0b7d54cf8ad5024b4dc6c",
+    "videoId": "64c0b8594cf8ad5024b4dc8b"
+}
+
+###
+GET http://localhost:3001/api/comments/video/64c0b8594cf8ad5024b4dc8b

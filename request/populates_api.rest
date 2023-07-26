@@ -1,0 +1,43 @@
+
+
+### POPULATE WITH CORRECT VideoID (has to be a valid youtube video id, and contain product page tokopedia.link)
+### EXPECTED return status 201, and VideoAndProduct object
+POST http://localhost:3001/api/populates
+content-type: application/json
+
+{
+    "videoId":"HjNVymiHLNo"
+}
+
+### VideoId not provided
+POST http://localhost:3001/api/populates
+
+### videoId is wrong
+POST http://localhost:3001/api/populates
+content-type: application/json
+
+{
+    "videoId":"5MvHSSp5VGE1"
+}
+
+
+### valid youtube video, but not contain product page tokopedia.link
+POST http://localhost:3001/api/populates
+content-type: application/json
+
+{
+    "videoId":"g8ENtHe2hMU"
+}
+
+### valid youtube video, containtokopedia.link, but not valid product page
+
+POST http://localhost:3001/api/populates
+content-type: application/json
+
+{
+    "videoId":"N4rqRd9P4p8"
+}
+
+
+
+

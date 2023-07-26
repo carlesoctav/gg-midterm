@@ -1,0 +1,6 @@
+### Get a product list of a specific videos
+GET http://localhost:3001/api/products/video/64c0b8594cf8ad5024b4dc8b
+
+### Get a product list of a specific videos, but unknown id
+GET http://localhost:3001/api/products/video/64bf6cc5779b0905083a6b46
+

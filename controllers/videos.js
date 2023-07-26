@@ -5,6 +5,11 @@ const videoRouter = require("express").Router();
 
 videoRouter.get("/", async (request, response) => {
   const videos = await Video.find({});
+
+  if (!videos) {
+    throw new NotFoundError("video not found");
+  }
+
   const videosWithoutProduct = videos.map((video) => {
     return { id: video.id, title: video.title, thumbnail: video.thumbnail };
   });

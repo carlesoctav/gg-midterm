@@ -9,6 +9,15 @@ require("express-async-errors");
 const populateRouter = require("./controllers/populates");
 const videoRouter = require("./controllers/videos");
 const productRouter = require("./controllers/products");
+const usersRouter = require("./controllers/users");
+const commentsRouter = require("./controllers/comments");
+
+if (process.env.NODE_ENV === "development") {
+  const testingRouter = require("./controllers/testing");
+  app.use("/api/testing", testingRouter);
+}
+
+const middleware = require("./utils/middleware");
 
 mongoose.set("strictQuery", false);
 
@@ -24,15 +33,22 @@ mongoose
   });
 
 app.use(cors());
+app.use(express.static("build"));
 app.use(express.json());
+app.use(middleware.requestLogger);
 
 app.use("/api/populates", populateRouter);
 app.use("/api/videos", videoRouter);
 app.use("/api/products", productRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/comments", commentsRouter);
 
 app.get("/", (request, response) => {
   response.send("<h1>Hello Worldrrwe!</h1>");
 });
+
+app.use(middleware.unknownEndpoint);
+app.use(middleware.errorHandler);
 
 app.listen(config.PORT, () => {
   logger.info(`Server running on port ${config.PORT}`);

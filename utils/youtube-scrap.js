@@ -1,5 +1,6 @@
 const config = require("dotenv").config();
 const axios = require("axios");
+const PopulateError = require("./customError").PopulateError;
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
 async function getVideoAndTokopediaLinks(videoId) {
@@ -9,7 +10,7 @@ async function getVideoAndTokopediaLinks(videoId) {
   try {
     response.data.items[0].snippet;
   } catch (error) {
-    throw new Error(
+    throw new PopulateError(
       "not a valid youtube video, make sure it is an id to youtube video and not a link"
     );
   }
@@ -21,7 +22,7 @@ async function getVideoAndTokopediaLinks(videoId) {
   );
 
   if (!tokopediaLinks) {
-    throw new Error(
+    throw new PopulateError(
       "no tokopedia links founds, make sure the video has tokopedia links in the description on this format: https://tokopedia.link/xxxxxxxxxxx"
     );
   }
@@ -44,8 +45,8 @@ async function getVideoAndProduct(videoId) {
     }
   }
 
-  if (productList.length == 0) {
-    throw new Error(
+  if (productList.length === 0) {
+    throw new PopulateError(
       "no products found, probably a most of the links are broken or not a product page"
     );
   }

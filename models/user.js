@@ -1,22 +1,18 @@
 const mongoose = require("mongoose");
+const uniqueValidator = require("mongoose-unique-validator");
 
-const videoSchema = new mongoose.Schema({
-  title: {
+const userSchema = mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  name: String,
+  passwordHash: {
     type: String,
     required: true,
   },
-  thumbnail: {
-    type: String,
-    required: true,
-  },
-  productList: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Product",
-    },
-  ],
-
-  commentList: [
+  comments: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Comment",
@@ -24,12 +20,17 @@ const videoSchema = new mongoose.Schema({
   ],
 });
 
-videoSchema.set("toJSON", {
+userSchema.plugin(uniqueValidator);
+
+userSchema.set("toJSON", {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString();
     delete returnedObject._id;
     delete returnedObject.__v;
+    delete returnedObject.passwordHash;
   },
 });
 
-module.exports = mongoose.model("Video", videoSchema);
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
