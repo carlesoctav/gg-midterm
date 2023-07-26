@@ -8,3 +8,7 @@ link youtube -> udah berhasil jadiin thumbnail dan product list -> success
 add product hidden api, maunya error validationError, dan castError aja sih.
 
 hidden api buat add videolist ->
+
+# what i want to do now
+
+rapiin code.
