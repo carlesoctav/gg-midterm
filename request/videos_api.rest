@@ -1,4 +1,10 @@
-### 
+### GET all videos
 GET http://localhost:3001/api/videos
 
 
+### change the id
+GET http://localhost:3001/api/videos/64c2a8de7b34f2c75a0d4f08/products
+
+
+### change the id
+GET http://localhost:3001/api/videos/64c2a8de7b34f2c75a0d4f08/comments

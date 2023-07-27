@@ -1,13 +1,17 @@
 
-
+### Success case
 ### POPULATE WITH CORRECT VideoID (has to be a valid youtube video id, and contain product page tokopedia.link)
 ### EXPECTED return status 201, and VideoAndProduct object
+### Can u guess what videoId is this? :D
 POST http://localhost:3001/api/populates
 content-type: application/json
 
 {
     "videoId":"HjNVymiHLNo"
 }
+
+
+### Fail case
 
 ### VideoId not provided
 POST http://localhost:3001/api/populates

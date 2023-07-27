@@ -9,6 +9,11 @@ const videoSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  youtubeLink: {
+    type: String,
+    required: true,
+  },
+
   productList: [
     {
       type: mongoose.Schema.Types.ObjectId,

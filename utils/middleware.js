@@ -20,7 +20,7 @@ const errorHandler = (error, request, response, next) => {
   } else if (error.name === "ValidationError") {
     return response.status(400).json({ error: error.message });
   } else if (error.name === "JsonWebTokenError") {
-    return response.status(400).json({ error: "token missing or invalid" });
+    return response.status(401).json({ error: "token missing or invalid" });
   } else if (error.name === "PopulateError") {
     return response.status(400).json({ error: error.message });
   } else if (error.name === "TypeError") {
@@ -29,6 +29,8 @@ const errorHandler = (error, request, response, next) => {
     return response.status(404).json({ error: error.message });
   } else if (error.name === "MissingError") {
     return response.status(400).json({ error: error.message });
+  } else if ((error.name = "UnauthorizedError")) {
+    return response.status(401).json({ error: error.message });
   } else {
     return response.status(500).json({ error: error.message });
   }
@@ -36,8 +38,19 @@ const errorHandler = (error, request, response, next) => {
   next(error);
 };
 
+const tokenExtractor = (request, response, next) => {
+  const authorization = request.get("authorization");
+  if (authorization && authorization.startsWith("Bearer ")) {
+    request.token = authorization.replace("Bearer ", "");
+  } else {
+    request.token = null;
+  }
+  next();
+};
+
 module.exports = {
   requestLogger,
   unknownEndpoint,
   errorHandler,
+  tokenExtractor,
 };

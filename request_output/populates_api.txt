@@ -1,0 +1,209 @@
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 8131
+ETag: W/"1fc3-tYw5nfdDe8gyWdYwIWPGF2fK/p0"
+Date: Thu, 27 Jul 2023 16:57:38 GMT
+Connection: close
+
+{
+  "message": "found 20 products from 26 links",
+  "productList": [
+    {
+      "productName": "EarFun Free Mini True Wireless Earbuds - TWS Mini Buds Super Bass IPX7",
+      "productPrice": "Rp539.000",
+      "productLink": "https://tokopedia.link/QXCfsZ9w2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/3464b535c359b43008d6a80212102b5e.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Xiaomi Fiil T1 Lite ENC TWS Earphone Earbud Bluetooth 5.2 Gaming IPX7 - TWS ONLY",
+      "productPrice": "Rp492.200",
+      "productLink": "https://tokopedia.link/KrwCbXZw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/682189001ee73d253f273ab35c738954.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "MOONDROP NEKOCAKE KURONEKO Active Noise Cancelling TWS Bluetooth 5.2 - Nekocake",
+      "productPrice": "Rp630.000",
+      "productLink": "https://tokopedia.link/dPxijKEw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/564819fad80419d43635288eecadd6e9.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "SoundPEATS TrueFree 2 True Wireless Earbuds - Black",
+      "productPrice": "Rp349.000",
+      "productLink": "https://tokopedia.link/DulWlkNw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/b697c8e2812037f146ccb152ced84279.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Eggel QuietBuds Lite ANC + ENC TWS Bluetooth Earbuds with Gaming Mode",
+      "productPrice": "Rp500.000",
+      "productLink": "https://tokopedia.link/uCAqGARw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/f6eae401646104f0115ad357c695df28.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Knowledge KZ S2 Hybrid TWS headset bluetooth with gaming mode - Hitam",
+      "productPrice": "Rp329.000",
+      "productLink": "https://tokopedia.link/0DxdW7Tw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/8f8907856a074bb22f64ad6cf2635750.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "QCY T13 TWS Wireless Earphone - White - T13 white",
+      "productPrice": "Rp261.740",
+      "productLink": "https://tokopedia.link/AwZ0sTdx2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/bee72f4979b9208f9fabb7c6a697158a.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "BASEUS TRUE WIRELESS BLUETOOTH EARPHONE EARBUDS TWS BOWIE E3 - Hitam",
+      "productPrice": "Rp259.000",
+      "productLink": "https://tokopedia.link/D8ZEqngx2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/6e5755ed70ddb4fb5d1f19e725bc262a.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Lenovo LP3 Pro Bluetooth Headphones TWS Wireless LED Display Earphones - Hitam",
+      "productPrice": "Rp149.000",
+      "productLink": "https://tokopedia.link/sEWpuQ2w2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/2ff295ad6698edfc58987aae5e9ade3a.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Headset Bluetooth TWS F9-5 LED Smart Display with Powerbank - F9-5",
+      "productPrice": "Rp49.920",
+      "productLink": "https://tokopedia.link/rIhEgHcx2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/ed8927bca724a3b7a3102c353ebda7bb.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "SoundPEATS Sonic PRO APTX Adaptive True Wireless Earbuds - Grey",
+      "productPrice": "Rp539.000",
+      "productLink": "https://tokopedia.link/p1ruFELw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/212b7d58858bae19e89f4b96da919447.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Eggel Energy Buds Pro AptX TWS Bluetooth Earphone with Gaming Mode",
+      "productPrice": "Rp399.000",
+      "productLink": "https://tokopedia.link/6LMtsVOw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/def596de2c899876e6db210a6504f1d5.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "dbE TWS10 V2 High Fidelity TWS Bluetooth Earphone ENC Microphone",
+      "productPrice": "Rp249.000",
+      "productLink": "https://tokopedia.link/u8gRc4Sw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/5091beb8b7547a5dc29f0569dc5e7174.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "EDIFIER X3S TWS Wireless Bluetooth 5.2 Earphone Qualcomm aptX cVc ENC - Hitam",
+      "productPrice": "Rp389.000",
+      "productLink": "https://tokopedia.link/gpgPnbVw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/505f082e34a0386d81e82ff99e030b08.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "dbE TWS10 V2 High Fidelity TWS Bluetooth Earphone ENC Microphone",
+      "productPrice": "Rp249.000",
+      "productLink": "https://tokopedia.link/u8gRc4Sw2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/5091beb8b7547a5dc29f0569dc5e7174.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "JBL Wave 100TWS / 100 TWS True Wireless In-Ear Headphones - Black",
+      "productPrice": "Rp509.000",
+      "productLink": "https://tokopedia.link/CuLJi25w2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/0b743fce5753e9c85ed9fcf52ffad693.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Haylou GT7 TWS Wireless Earphone Headset Bluetooth Alt GT1 GT5 GT6 Pro - Hitam",
+      "productPrice": "Rp228.000",
+      "productLink": "https://tokopedia.link/Txcv9k7w2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/357c1f8f17dea5551a6f0456870e4dc5.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Bluetooth Earbuds MPOW M12 TWS True Wireless Earphone",
+      "productPrice": "Rp279.000",
+      "productLink": "https://tokopedia.link/r4Pmeffx2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/967dc11caaf09a0cb4e1a254eb007b5b.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "TWS Earbuds Headset Bluetooth JETE T8 - Bluetooth 5.1 - Garansi 2 th",
+      "productPrice": "Rp279.900",
+      "productLink": "https://tokopedia.link/xm31bFhx2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/4d151b4d5c7b32cdc4edc9a93d0ea69c.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    },
+    {
+      "productName": "Skullcandy Dime True Wireless Earbuds - True Black",
+      "productPrice": "Rp599.000",
+      "productLink": "https://tokopedia.link/4afwnvjx2vb",
+      "productImage": "https://images.tokopedia.net/img/generator/gFZoml/bbe089fed759668854a1a3a7cfabb6f4.jpg",
+      "productVideo": "youtube.com/watch?v=HjNVymiHLNo"
+    }
+  ],
+  "videoDetails": {
+    "title": "Saya beli 20 TWS murah buat 2023, dan pilih yang paling RECOMMENDED!",
+    "thumbnail": "https://i.ytimg.com/vi/HjNVymiHLNo/hqdefault.jpg",
+    "tokopediaLinks": [
+      "https://tokopedia.link/david-wib12",
+      "https://tokopedia.link/QXCfsZ9w2vb",
+      "https://tokopedia.link/KrwCbXZw2vb",
+      "https://tokopedia.link/dPxijKEw2vb",
+      "https://tokopedia.link/DulWlkNw2vb",
+      "https://tokopedia.link/uCAqGARw2vb",
+      "https://tokopedia.link/0DxdW7Tw2vb",
+      "https://tokopedia.link/AwZ0sTdx2vb",
+      "https://tokopedia.link/D8ZEqngx2vb",
+      "https://tokopedia.link/sEWpuQ2w2vb",
+      "https://tokopedia.link/rIhEgHcx2vb",
+      "https://tokopedia.link/p1ruFELw2vb",
+      "https://tokopedia.link/6LMtsVOw2vb",
+      "https://tokopedia.link/u8gRc4Sw2vb",
+      "https://tokopedia.link/gpgPnbVw2vb",
+      "https://tokopedia.link/u8gRc4Sw2vb",
+      "https://tokopedia.link/CuLJi25w2vb",
+      "https://tokopedia.link/Txcv9k7w2vb",
+      "https://tokopedia.link/r4Pmeffx2vb",
+      "https://tokopedia.link/xm31bFhx2vb",
+      "https://tokopedia.link/4afwnvjx2vb",
+      "https://tokopedia.link/AKIOook8Qvb",
+      "https://tokopedia.link/anYzx6q8Qvb",
+      "https://tokopedia.link/iD40kiC8Qvb",
+      "https://tokopedia.link/DP7QokS8Qvb",
+      "https://tokopedia.link/pMWv2tU8Qvb"
+    ],
+    "youtubeLink": "youtube.com/watch?v=HjNVymiHLNo",
+    "productList": [
+      "64c2a202748a4c609c77b978",
+      "64c2a202748a4c609c77b979",
+      "64c2a202748a4c609c77b97a",
+      "64c2a202748a4c609c77b97b",
+      "64c2a202748a4c609c77b97c",
+      "64c2a202748a4c609c77b97d",
+      "64c2a202748a4c609c77b97e",
+      "64c2a202748a4c609c77b97f",
+      "64c2a202748a4c609c77b980",
+      "64c2a202748a4c609c77b981",
+      "64c2a202748a4c609c77b982",
+      "64c2a202748a4c609c77b983",
+      "64c2a202748a4c609c77b984",
+      "64c2a202748a4c609c77b985",
+      "64c2a202748a4c609c77b986",
+      "64c2a202748a4c609c77b987",
+      "64c2a202748a4c609c77b988",
+      "64c2a202748a4c609c77b989",
+      "64c2a202748a4c609c77b98a",
+      "64c2a202748a4c609c77b98b"
+    ]
+  }
+}

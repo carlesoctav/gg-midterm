@@ -19,10 +19,18 @@ class MissingError extends Error {
   }
 }
 
+class UnauthorizedError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "UnauthorizedError";
+  }
+}
+
 const customError = {
   PopulateError,
   NotFoundError,
   MissingError,
+  UnauthorizedError,
 };
 
 module.exports = customError;

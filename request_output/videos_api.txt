@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 675
+ETag: W/"2a3-VR1RrrKvgKJWp6eP3cq9cwkplg8"
+Date: Thu, 27 Jul 2023 17:12:43 GMT
+Connection: close
+
+[
+  {
+    "id": "64c234bee557d743a1a57280",
+    "title": "Saya beli 20 TWS murah buat 2023, dan pilih yang paling RECOMMENDED!",
+    "thumbnail": "https://i.ytimg.com/vi/HjNVymiHLNo/hqdefault.jpg",
+    "youtubeLink": "youtube.com/watch?v=HjNVymiHLNo"
+  },
+  {
+    "id": "64c23ce57cc690ea546b084b",
+    "title": "Hidden Gem ❤️ - Nyobain barang aneh yang dijual online Episode 29!",
+    "thumbnail": "https://i.ytimg.com/vi/5MvHSSp5VGE/hqdefault.jpg",
+    "youtubeLink": "youtube.com/watch?v=5MvHSSp5VGE"
+  },
+  {
+    "id": "64c2a202748a4c609c77b98d",
+    "title": "Saya beli 20 TWS murah buat 2023, dan pilih yang paling RECOMMENDED!",
+    "thumbnail": "https://i.ytimg.com/vi/HjNVymiHLNo/hqdefault.jpg",
+    "youtubeLink": "youtube.com/watch?v=HjNVymiHLNo"
+  }
+]

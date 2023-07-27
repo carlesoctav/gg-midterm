@@ -1,16 +1,17 @@
 
+
+### GET ALL comments in every video
 GET http://localhost:3001/api/comments
 
 
-### 
+### POST a comment, need to be logged in
 POST http://localhost:3001/api/comments
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhcmxlc29jdGF2IiwiaWQiOiI2NGMyYTkxNjdiMzRmMmM3NWEwZDRmMGEiLCJpYXQiOjE2OTA0Nzg5MTV9.qlWfm8SxY7Zl3n86vbU6TnmQ0vCK0s9T_O9qvQgAt6E
 
 {
-    "comment": "Mondrop earphone best value di rangenya",
-    "userId": "64c0b7d54cf8ad5024b4dc6c",
-    "videoId": "64c0b8594cf8ad5024b4dc8b"
+    "comment": "This is a comment",
+    "videoId": "64c2a8de7b34f2c75a0d4f08"
 }
 
-###
-GET http://localhost:3001/api/comments/video/64c0b8594cf8ad5024b4dc8b
+

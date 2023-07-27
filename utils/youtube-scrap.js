@@ -3,6 +3,10 @@ const axios = require("axios");
 const PopulateError = require("./customError").PopulateError;
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
+if (!API_KEY) {
+  throw new Error("no youtube api key found");
+}
+
 async function getVideoAndTokopediaLinks(videoId) {
   const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${API_KEY}&part=snippet`;
   const response = await axios.get(url);
@@ -30,6 +34,7 @@ async function getVideoAndTokopediaLinks(videoId) {
     title: data.title,
     thumbnail: data.thumbnails.high.url,
     tokopediaLinks: tokopediaLinks,
+    youtubeLink: `youtube.com/watch?v=${videoId}`,
   };
 
   return videoDetails;

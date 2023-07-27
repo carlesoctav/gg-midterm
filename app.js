@@ -11,6 +11,7 @@ const videoRouter = require("./controllers/videos");
 const productRouter = require("./controllers/products");
 const usersRouter = require("./controllers/users");
 const commentsRouter = require("./controllers/comments");
+const loginRouter = require("./controllers/login");
 
 if (process.env.NODE_ENV === "development") {
   const testingRouter = require("./controllers/testing");
@@ -37,11 +38,12 @@ app.use(express.static("build"));
 app.use(express.json());
 app.use(middleware.requestLogger);
 
+app.use("/api/login", loginRouter);
+app.use("/api/comments", middleware.tokenExtractor, commentsRouter);
 app.use("/api/populates", populateRouter);
 app.use("/api/videos", videoRouter);
 app.use("/api/products", productRouter);
 app.use("/api/users", usersRouter);
-app.use("/api/comments", commentsRouter);
 
 app.get("/", (request, response) => {
   response.send("<h1>Hello Worldrrwe!</h1>");
@@ -50,6 +52,4 @@ app.get("/", (request, response) => {
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
 
-app.listen(config.PORT, () => {
-  logger.info(`Server running on port ${config.PORT}`);
-});
+module.exports = app;

@@ -12,10 +12,6 @@ populateRouter.post("/", async (request, response) => {
   }
 
   const videoAndProduct = await getVideoAndProduct(videoId);
-  console.log(
-    "🚀 ~ file: populates.js:19 ~ populateRouter.post ~ videoAndProduct:",
-    videoAndProduct
-  );
   const videoDetails = videoAndProduct.videoDetails;
   const productList = videoAndProduct.productList;
   const savedProducts = await Product.insertMany(productList);

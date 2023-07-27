@@ -1,0 +1,18 @@
+
+###  get TOKEN for login
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "carlesoctav",
+    "password": "konohamaruHD"
+}
+
+### salah password
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "carlesoctav",
+    "password": "konohamarudd"
+}
