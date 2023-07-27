@@ -21,9 +21,9 @@ MONGODB_URI = your_mongodb_uri
 SECRET = your_jwt_secret
 ```
 
-- `YOUTUBE_API_KEY`: Obtain your YouTube API key by following this guide: https://developers.google.com/youtube/v3/getting-started
+- `YOUTUBE_API_KEY`: Obtain your YouTube API key by following the instructions in the [YouTube API documentation](https://developers.google.com/youtube/v3/getting-started).
 - `PORT`: Specify the port on which you want the server to run.
-- `MONGODB_URI`: Set the MongoDB URI.
+- `MONGODB_URI`: Set the MongoDB URI. Note that for local use, you should use `mongodb://127.0.0.1:27017/tokped` instead of `mongodb://localhost:27017` in the `.env` file.
 - `SECRET`: Provide a secret key for JWT token generation. You can use any string as the secret.
 
 For ease of testing, I have included my own `.env` file in the submission folder, containing a personal YouTube API key and a cloud MongoDB URI. please use it for testing purposes only.
@@ -51,13 +51,28 @@ Then, install `bcryptjs` instead:
 npm install bcryptjs
 ```
 
-Additionally, ensure cross-platform compatibility by installing the `cross-env` package as a development dependency:
+Also adjust the npm scripts in `package.json` as follows:
+
+```json
+{
+  // ...
+  "scripts": {
+    "start": "set NODE_ENV=production && node index.js",
+    "dev": "set NODE_ENV=development && nodemon index.js",
+    // ...
+    "test": "set NODE_ENV=test  && jest --verbose --runInBand"
+  }
+  // ...
+}
+```
+
+Or for cross-platform support, you can use the `cross-env` package:
 
 ```
-npm install --save-dev cross-env
+npm install cross-env
 ```
 
-Adjust the npm scripts in `package.json` as follows:
+Then, adjust the npm scripts in `package.json` as follows:
 
 ```json
 {
