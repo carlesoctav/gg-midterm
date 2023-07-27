@@ -35,6 +35,8 @@ For ease of testing, I have included my own `.env` file in the submission folder
 To understand the API endpoints, refer to the [apiContract](./apiContract.md) file.
 To understand the various endpoints and how to use them, refer to the [request](./request/) folder.
 
+for a easier way to test the api, you can use the [request](./request/) folder, and install the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension for VSCode.
+
 ## Note for Windows Users
 
 Some Windows users have encountered issues with the `bcrypt` library. If you encounter problems, remove the library with the command:
